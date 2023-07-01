@@ -1,0 +1,183 @@
+*{margin: 0%; padding: 0%;
+    font-family: sans-serif;}
+
+body{background:black;
+    overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100vh;
+}
+
+main{width: 100%;}
+
+
+ h1{
+    text-align: center;
+    margin-top: 2vh;
+    color: white;
+ }
+
+
+   
+
+    #VALUE{width: 80%; 
+    height: 50vh;
+background: white;
+margin: auto;
+margin-top: 5vh;
+border-radius: 5px;}
+
+.info-panels {
+    --color-icon: #fff;
+    --color-input: #ccc;
+    --color-border: #9e9e9e;
+
+    width: fit-content; 
+margin-top: 4vh;
+text-align: center;
+margin-left: 20vh;
+
+}
+  
+  .input-color-group-one {
+    position: relative;
+  }
+  
+  .input-color {
+    max-width: 230px;
+    min-width: 150px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 80px;
+    background: none;
+    padding: 16px;
+    font-size: 16px;
+    transition: var(--all-transition);
+    -webkit-transition: var(--all-transition);
+    -moz-transition: var(--all-transition);
+    -ms-transition: var(--all-transition);
+    -o-transition: var(--all-transition);
+  }
+  
+
+  .input-color:valid {
+    color: var(--color-input);
+    outline: none;
+  }
+  
+  .input-color::-webkit-input-placeholder {
+    color: var(--color-input);
+  }
+  
+  .input-color::-moz-input-placeholder {
+    color: var(--color-input);
+  }
+  
+  .input-color::-ms-input-placeholder {
+    color: var(--color-input);
+  }
+  
+  .input-color:focus::-webkit-input-placeholder, input-color:valid::-webkit-input-placeholder {
+    opacity: var(--input-focus-opacity);
+  }
+  
+  .input-color:focus::-moz-input-placeholder, input-color:valid::-moz-input-placeholder {
+    opacity: var(--input-focus-opacity);
+  }
+  
+  .input-color:focus::-ms-input-placeholder, input-color:valid::-ms-input-placeholder {
+    opacity: var(--input-focus-opacity);
+  }
+  
+  .color-label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    color: var(--color-border);
+    font-weight: 600;
+    padding: 0 5px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 10px;
+    top: -11.5px;
+    left: 25px;
+    background-color: transparent;
+    cursor: default;
+    backdrop-filter: blur(10px);
+    transition: var(--all-transition);
+    -webkit-transition: var(--all-transition);
+    -moz-transition: var(--all-transition);
+    -ms-transition: var(--all-transition);
+    -o-transition: var(--all-transition);
+  }
+  
+
+  
+  .btn-copy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 50%;
+    top: -11.5px;
+    right: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: var(--all-transition);
+    -webkit-transition: var(--all-transition);
+    -moz-transition: var(--all-transition);
+    -ms-transition: var(--all-transition);
+    -o-transition: var(--all-transition);
+  }
+  
+  .btn-copy:hover {
+    background-color: var(--color-border);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  
+  .btn-copy:active {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  
+  .input-color:focus ~ .btn-copy {
+    border: 1.5px solid var(--color-border-hover);
+  }
+  
+  .input-color:valid .input-color:focus ~ .btn-copy {
+    border: 1.5px solid var(--color-border);
+  }
+  
+  .input-color:focus ~ .btn-copy:hover {
+    background-color: var(--color-border-hover);
+  }
+  
+  #icon-btn-copy {
+    fill: var(--color-border);
+  }
+  
+  .btn-copy:hover #icon-btn-copy {
+    fill: var(--color-icon);
+  }
+  
+  .input-color:focus ~ .btn-copy #icon-btn-copy {
+    fill: var(--color-border-hover);
+  }
+  
+  .input-color:focus ~ .btn-copy:hover #icon-btn-copy, .input-color:valid ~ .btn-copy:hover #icon-btn-copy {
+    fill: var(--color-icon);
+  }
